@@ -2,16 +2,16 @@ This version is updated by Hebah ElGibreen to introduce dynamic environment and 
 
 This package is to be downloaded on the robot and connected to the PC version that act as a bridge since the prolog is not compatible with Turtlebot processor (details in ""ElGibreen, Hebah, and Kamal Youcef-Toumi. "Dynamic task allocation in an uncertain environment with heterogeneous multi-agents." Autonomous Robots (2019): 1-26."".
 
+=======================================================
+		Setup Before Run	       
 ==========================================================
-		       Setup Before Run
-==========================================================
-First install the follwing package 
-https://github.com/gennari
-patrolling_sim
-tcp_interface
-turtlebot_setp
 
-After that, follow the instruction in each package from https://github.com/gennari and make sure that everything is set
+First install the follwing packages:
+
+	tcp_interface
+	turtlebot_setp
+
+After that, follow the instruction in each package from https://github.com/gennari and make sure that everything is set.
 
 Then build the project folder (you will get an error becuase of TCP so source dev/setup.bash first then build again (catkin_make))
 
