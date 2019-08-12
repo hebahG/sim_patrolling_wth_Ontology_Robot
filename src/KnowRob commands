@@ -1,0 +1,35 @@
+To create owl from urdf::
+rosrun knowrob_srdl URDF2SRDL
+  -u ./urdf/pr2.urdf 
+  -s PR2.owl 
+  -i http://ias.cs.tum.edu/kb/PR2.owl# 
+  -c move_base,move_arm 
+  -g ./urdf/pr2_planning_description.yaml
+
+The converter supports the following command-line arguments:
+
+    -h, –help show a help text
+    -u, –urdf URDF file to read and work with
+    -s, –srdl target SRDL file
+    -i, –uri URI to use for SRDL description
+    -c, –caps list of static SRDL capabilities to be asserted for the robot
+
+EXAMPLE...
+rosrun knowrob_srdl URDF2SRDL -u /home/bebe-mitu/catkin_sim_patrolling_semanticN_DyObstical/src/kobuki_description/urdf/kobuki.urdf -s kuboki_hebah.owl -i http://knowrob.org/kb/kuboki_hebah.owl# -c move_base
+
+=========
+This owl must be registered in "stacks/knowrob/knowrob_sdlr/prolog/init.pl"by adding linke kobuki, for example::
+in init.pl add
+:- rdf_db:rdf_register_ns(robot_0, 'http://knowrob.org/kb/robot_0.owl#', [keep(true)]).
+
+
+anything that has kobuki add robot_0 to it?? ==> this will work if one robot otherwize add for each robot
+==============================================
+EXAMPLE:To test prolog commands with knowrob::
+rosrun rosprolog rosprolog knowrob_srdl
+register_ros_package(knowrob_common).
+?- owl_parse('package://knowrob_common/owl/knowrob_common.owl').
+?- rdf_has(kobuki:'kobuki_standalone_wheel_right_link', srdl2comp:'mass_value', literal(type(_, Vol))).
+?- owl_parse('package://knowrob_srdl/owl/kobuki.owl'). 
+?- rdf_has(kobuki:'kobuki_standalone_robot1', kobuki:'mass', literal(type(_, Vol))).
+

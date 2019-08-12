@@ -1,0 +1,5 @@
+string task
+string robot_id
+---
+string[] positive_capabilities
+string[]n negative_capabilities
