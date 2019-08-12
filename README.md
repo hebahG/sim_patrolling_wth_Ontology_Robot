@@ -1,6 +1,6 @@
 *This version is updated by Hebah ElGibreen based on [patrolling_sim](https://github.com/gennari/patrolling_sim) to introduce dynamic environment and SAUDE Algorithm (written in the code as ODTA) in addition to ontology with uncertainty.*
 
-This package is to be downloaded on the robot and connected to the [PC version]() that act as a bridge since the prolog is not compatible with Turtlebot processor (details in **ElGibreen, Hebah, and Kamal Youcef-Toumi. "Dynamic task allocation in an uncertain environment with heterogeneous multi-agents." Autonomous Robots (2019): 1-26.**.
+This package is to be downloaded on the robot and connected to the [PC version](https://github.com/hebahG/sim_patrolling_wth_Ontology_PC) that act as a bridge since the prolog is not compatible with Turtlebot processor (details in **ElGibreen, Hebah, and Kamal Youcef-Toumi. "Dynamic task allocation in an uncertain environment with heterogeneous multi-agents." Autonomous Robots (2019): 1-26.**.
 
 **===================================================**
 
