@@ -3,7 +3,7 @@
 This package is to be downloaded on the robot and connected to the [PC version]() that act as a bridge since the prolog is not compatible with Turtlebot processor (details in **ElGibreen, Hebah, and Kamal Youcef-Toumi. "Dynamic task allocation in an uncertain environment with heterogeneous multi-agents." Autonomous Robots (2019): 1-26.**.
 
 **===================================================**
-		**Setup Before Run**
+**Setup Before Run**
 **===================================================**
 
 1- Install the follwing packages:
@@ -27,10 +27,13 @@ This package is to be downloaded on the robot and connected to the [PC version](
 
 
 **==========================================================
-       How to run the MRP agents on different robots ([source](https://github.com/gennari/patrolling_sim))
+
+How to run the MRP agents on different robots ([source](https://github.com/gennari/patrolling_sim))
 ==========================================================**
-1. Prepare your robots so that they can navigate in the environment with move_base. 
+1- Prepare your robots so that they can navigate in the environment with move_base. 
+
 2- Configure the network so that they can communicate each other.
+
 3- Copy the 'patrolling_sim' and 'tcp_interface' packages on all the robots.
 
 4- Configure the file tcp_interface/config/UDPpeers.cfg adding one line for each host IP in the team. 
