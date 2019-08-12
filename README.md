@@ -55,4 +55,7 @@ Patrolling node sends necessary commands to robots through /robot_name/move_base
 6- Start the script 'start_experiment_distributed.py' on all the robots.
 
 7- On each robot, select the map, the number of robots, the algorithm and other info in the launcher. Choose the proper network tcp_interface (e.g. wlan0) corresponding to the robot network.
-
+	
+	Put ID equal to its name
+	False to monitor
+	Robot is real
