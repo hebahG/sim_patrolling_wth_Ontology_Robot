@@ -5,6 +5,7 @@ This package is to be downloaded on the robot and connected to the [PC version](
 **===================================================**
 
 **Setup Before Run**
+
 **===================================================**
 
 1- Install the follwing packages:
@@ -31,6 +32,7 @@ This package is to be downloaded on the robot and connected to the [PC version](
 
 **How to run the MRP agents on different robots ([source](https://github.com/gennari/patrolling_sim))**
 **==========================================================**
+
 1- Prepare your robots so that they can navigate in the environment with move_base. 
 
 2- Configure the network so that they can communicate each other.
