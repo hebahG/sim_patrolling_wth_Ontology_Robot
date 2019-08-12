@@ -3,6 +3,7 @@
 This package is to be downloaded on the robot and connected to the [PC version]() that act as a bridge since the prolog is not compatible with Turtlebot processor (details in **ElGibreen, Hebah, and Kamal Youcef-Toumi. "Dynamic task allocation in an uncertain environment with heterogeneous multi-agents." Autonomous Robots (2019): 1-26.**.
 
 **===================================================**
+
 **Setup Before Run**
 **===================================================**
 
@@ -26,10 +27,10 @@ This package is to be downloaded on the robot and connected to the [PC version](
 > It is VERY IMPORTANT to note the initial position & direction of the robot started to build the map from becuase in the real robots this will be the initial position and orintation.
 
 
-**==========================================================
+**==========================================================**
 
-How to run the MRP agents on different robots ([source](https://github.com/gennari/patrolling_sim))
-==========================================================**
+**How to run the MRP agents on different robots ([source](https://github.com/gennari/patrolling_sim))**
+**==========================================================**
 1- Prepare your robots so that they can navigate in the environment with move_base. 
 
 2- Configure the network so that they can communicate each other.
